@@ -37,7 +37,11 @@ $(window).scroll(function(){
         $('.menu__link_active').removeClass('menu__link_active');
         $('#portfolio-link').addClass('menu__link_active');
     }
-    if ($(window).scrollTop() > 3000) {
+    if ($(window).scrollTop() > 3181) {
+        $('.menu__link_active').removeClass('menu__link_active');
+        $('#partners-link').addClass('menu__link_active');
+    }
+    if ($(window).scrollTop() > 3650) {
         $('.menu__link_active').removeClass('menu__link_active');
         $('#contacts-link').addClass('menu__link_active');
     }
