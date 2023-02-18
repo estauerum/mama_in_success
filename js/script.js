@@ -25,7 +25,7 @@ $(window).scroll(function(){
         $('.menu__link_active').removeClass('menu__link_active');
         $('#main').addClass('menu__link_active');
     }
-    if ($(window).scrollTop() > 1139) { 
+    if ($(window).scrollTop() > 840) { 
         $('.menu__link_active').removeClass('menu__link_active');
         $('#about-link').addClass('menu__link_active');
     }
@@ -39,9 +39,13 @@ $(window).scroll(function(){
     }
     if ($(window).scrollTop() > 3181) {
         $('.menu__link_active').removeClass('menu__link_active');
+        $('#organizators-link').addClass('menu__link_active');
+    }
+    if ($(window).scrollTop() > 4010) {
+        $('.menu__link_active').removeClass('menu__link_active');
         $('#partners-link').addClass('menu__link_active');
     }
-    if ($(window).scrollTop() > 3650) {
+    if ($(window).scrollTop() > 4518) {
         $('.menu__link_active').removeClass('menu__link_active');
         $('#contacts-link').addClass('menu__link_active');
     }
@@ -72,6 +76,17 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+  var swiper = new Swiper(".twoSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 50,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true,
     },
   });
 
